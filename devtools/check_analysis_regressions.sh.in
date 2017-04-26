@@ -1,0 +1,283 @@
+#!/bin/bash
+
+# Take tab-separated input in 2+ colums (like a typos file), extract the first
+# column, send it through a spell checker, and convert the result to xml.
+# Finally open the xml in the default browser.
+
+# For debugging, uncomment this command:
+# set -x
+
+# Language being tested, ISO 639-1 code if available:
+giella_lang=@GTLANG2@
+
+# Directory variables:
+top_srcdir=@top_srcdir@
+top_builddir=@top_builddir@
+abs_top_builddir=@abs_top_builddir@
+giella_core=@GIELLA_CORE@
+corpusdir=$top_srcdir/test/data
+
+# File variables:
+abbr_file=$top_srcdir/tools/preprocess/abbr.txt
+source_corpus=analysis_check_corpus
+corpus_file=$corpusdir/$source_corpus.txt
+
+analyser=$top_builddir/src/analyser-disamb-gt-desc
+tokeniser=$top_builddir/tools/preprocess/tokeniser-disamb-gt-desc.pmhfst
+disambiguator=$top_srcdir/src/syntax/disambiguation.cg3
+functions_cg=$top_srcdir/src/syntax/functions.cg3
+dependencies=$top_srcdir/src/syntax/dependency.cg3
+mwe_dis=$top_srcdir/tools/preprocess/mwe-dis.cg3
+
+# Tools:
+xerox_lookup=@LOOKUP@
+foma_lookup=@FLOOKUP@
+hfst_lookup=@HFST_OPTIMIZED_LOOKUP@
+hfst_tokenise=@HFST_TOKENISE@
+vislcg3=@VISLCG3@
+cg_mwesplit=cg-mwesplit
+
+# Use autotools mechanisms to only run the configured fst types in the tests:
+fsttype=
+@CAN_HFST_TRUE@fsttype="$fsttype hfst"
+@CAN_XFST_TRUE@fsttype="$fsttype xfst"
+@CAN_FOMA_TRUE@fsttype="$fsttype foma"
+
+# Use autotools mechanisms to check for hfst-tokenise:
+htokenise_true=x
+@WANT_TOKENISERS_TRUE@htokenise_true=yes
+
+# move into devtools dir in the build dir:
+cd $abs_top_builddir/devtools
+
+function print_usage() {
+    echo "Usage: $0 OPTION [MORE OPTIONS...]"
+    echo
+    echo "Check whether there are regressions in the analysis output by"
+    echo "analysing a corpus in several ways and comparing to the previous"
+    echo "version. The input corpus used is found in"
+    echo "\$GIELLA_LANG/test/data/analysis_check_corpus.txt. The previous"
+    echo "analyses under version controll are stored in the same directory."
+    echo
+    echo "You need to specify at least one of the diff options."
+    echo
+    echo "  -h, --help           Print this usage info"
+    echo "  -c, --corpus CORPUS  Specify the corpus to be used as input"
+    echo "  -dm, --diff-morpha   Open a graphical diff view for the"
+    echo "                       morphological analyses"
+    echo "  -dd, --diff-disamb   Open a graphical diff view for the"
+    echo "                       disambiguated analyses"
+    echo "  -df, --diff-functn   Open a graphical diff view for the"
+    echo "                       syntactic function analyses"
+    echo "  -de, --diff-depend   Open a graphical diff view for the"
+    echo "                       dependency analyses"
+    echo "  -dh, --diff-hfsttok  Open a graphical diff view with"
+    echo "                       differences between the old-style preprocess +"
+    echo "                       lookup + lookup2cg using an HFST analyser vs"
+    echo "                       the new hfst-tokenise tokenise-and-lookup in"
+    echo "                       one go. This option has an effect only when"
+    echo "                       both hfst and tokenisers are enabled."
+    echo "  -dx, --diff-xeroxtok Open a graphical diff view with"
+    echo "                       differences between the old-style preprocess +"
+    echo "                       lookup + lookup2cg using a XEROX analyser vs"
+    echo "                       the new hfst-tokenise tokenise-and-lookup in"
+    echo "                       one go. This option has an effect only when"
+    echo "                       both Xerox, hfst and tokenisers are enabled."
+    echo
+}
+
+# Wrong usage - short instruction:
+if test $# -ge 9 -o $# -eq 0 ; then
+    echo "ERROR: no diff display option specified!"
+    echo
+    print_usage
+    exit 1
+fi
+
+# manual getopt loop... Mac OS X does not have good getopt
+while test $# -ge 1 ; do
+    if test x$1 = x--help -o x$1 = x-h ; then
+        print_usage
+        exit 0
+    elif test x$1 = x--diff-morpha  -o x$1 = x-dm ; then
+        diff_morpha="yes"
+    elif test x$1 = x--diff-disamb  -o x$1 = x-dd ; then
+        diff_disamb="yes"
+    elif test x$1 = x--diff-functn  -o x$1 = x-df ; then
+        diff_functn="yes"
+    elif test x$1 = x--diff-depend  -o x$1 = x-de ; then
+        diff_depend="yes"
+    elif test x$1 = x--diff-hfsttok -o x$1 = x-dh ; then
+        old_new_hfst_diff="yes"
+    elif test x$1 = x--diff-hfsttok -o x$1 = x-dx ; then
+        old_new_xerox_diff="yes"
+    elif test x$1 = x--corpus -o x$1 = x-c ; then
+        if test -z "$2" ; then
+            echo "ERROR: please specify the corpus path and name"
+            echo
+            print_usage
+            exit 1
+        elif [[ "$2" == \-* ]] ; then
+            echo "ERROR: please specify the corpus path and name"
+            echo
+            print_usage
+            exit 1
+        else
+            corpus="$2"
+            shift
+        fi
+    fi
+    shift
+done
+
+if test "x$corpus" != "x" ; then
+    source_corpus=$(basename $corpus .txt)
+    corpus_file=$corpus
+fi
+
+# Overridable file variables:
+morpha_corpus=$source_corpus.morpha
+disamb_corpus=$source_corpus.disamb
+functn_corpus=$source_corpus.functn
+depend_corpus=$source_corpus.depend
+
+function open_morpha_diffs() {
+    if test "x$diff_morpha" == "xyes" ; then
+        if test ! -f $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt; then
+            echo "First time run!"
+            echo "Adding $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt to svn"
+            cp $morpha_corpus.$fstsuffix.txt \
+               $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+            svn add $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        else
+            opendiff $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt \
+              $morpha_corpus.$fstsuffix.txt \
+              -merge $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        fi
+    fi
+}
+
+function open_disamb_diffs() {
+    if test "x$diff_disamb" == "xyes" ; then
+        if test ! -f $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt; then
+            echo "First time run!"
+            echo "Adding $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt to svn"
+            cp $morpha_corpus.$fstsuffix.txt \
+               $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+            svn add $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        else
+            opendiff $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt \
+              $morpha_corpus.$fstsuffix.txt \
+              -merge $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        fi
+    fi
+}
+
+function open_functn_diffs() {
+    if test "x$diff_functn" == "xyes" ; then
+        if test ! -f $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt; then
+            echo "First time run!"
+            echo "Adding $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt to svn"
+            cp $morpha_corpus.$fstsuffix.txt \
+               $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+            svn add $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        else
+            opendiff $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt \
+              $morpha_corpus.$fstsuffix.txt \
+              -merge $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        fi
+    fi
+}
+
+function open_depend_diffs() {
+    if test "x$diff_depend" == "xyes" ; then
+        if test ! -f $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt; then
+            echo "First time run!"
+            echo "Adding $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt to svn"
+            cp $morpha_corpus.$fstsuffix.txt \
+               $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+            svn add $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        else
+            opendiff $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt \
+              $morpha_corpus.$fstsuffix.txt \
+              -merge $corpusdir/$morpha_corpus.$fstsuffix.goldst.txt
+        fi
+    fi
+}
+
+function run_cg_tests() {
+    $vislcg3 -g $disambiguator \
+      < $morpha_corpus.$fstsuffix.txt \
+      > $disamb_corpus.$fstsuffix.txt
+    if test -f $functions_cg ; then
+        $vislcg3 -g $functions_cg \
+          < $disamb_corpus.$fstsuffix.txt \
+          > $functn_corpus.$fstsuffix.txt
+        if test -f $dependencies ; then
+            $vislcg3 -g $dependencies \
+              < $functn_corpus.$fstsuffix.txt \
+              > $depend_corpus.$fstsuffix.txt
+        fi
+    fi
+}
+
+function run_tests() {
+    preprocess \
+      < $corpus_file \
+      | $lookuptool $analyser.$fstsuffix \
+      | $giella_core/scripts/lookup2cg \
+      | perl $giella_core/scripts/sort-cg-cohort.pl \
+      | grep -v '^$' \
+      > $morpha_corpus.$fstsuffix.txt
+    run_cg_tests
+	open_morpha_diffs
+}
+
+function run_htokeniser_tests() {
+    $hfst_tokenise --giella-cg --weight-classes=1 $tokeniser \
+      < $corpus_file \
+      | $vislcg3 -g $mwe_dis \
+      | $cg_mwesplit \
+      > $morpha_corpus.$fstsuffix.txt
+    grep -v '^:' \
+      < $morpha_corpus.$fstsuffix.txt \
+      | perl -pe 's/ <W[^>]+>//g' \
+      | perl $giella_core/scripts/sort-cg-cohort.pl \
+      | grep -v '^$' \
+      > $morpha_corpus.htokoldcomp.txt
+    run_cg_tests
+	open_morpha_diffs
+    if test "x$old_new_hfst_diff" == "xyes" ; then
+	   opendiff $morpha_corpus.hfstol.txt $morpha_corpus.htokoldcomp.txt
+	fi
+}
+
+# Loop over the enabled transducer types - we test all that are configured:
+for f in $fsttype; do
+	# Determine the fst filename suffix based on fst engine:
+	if test $f == "xfst"; then
+		lookuptool="$xerox_lookup -q -flags mbTT"
+		fstsuffix="xfst"
+		run_tests
+	elif test $f == "foma"; then
+		lookuptool="$foma_lookup"
+		fstsuffix="foma"
+		run_tests
+	elif test $f == "hfst"; then
+		lookuptool="$hfst_lookup"
+		fstsuffix="hfstol"
+		run_tests
+		if test $htokenise_true == "yes"; then
+			fstsuffix="hfsttok"
+			run_htokeniser_tests
+		fi
+	else
+	    let "Fail += 1"
+		echo "FAIL: Unknown fst type! FST=$f"
+	    continue
+	fi
+done
+
+if test "x$old_new_xerox_diff" == "xyes" ; then
+   opendiff $morpha_corpus.xfst.txt $morpha_corpus.htokoldcomp.txt
+fi
