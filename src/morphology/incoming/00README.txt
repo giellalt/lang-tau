@@ -1,4 +1,4 @@
-WHAT IS THIS???!!!
+WHAT IS THIS???!!!!
 
 The intended use of this directory is to hold (in svn) files and documents of
 incoming lexical resources to be transformed more or less manually to lexc (or
