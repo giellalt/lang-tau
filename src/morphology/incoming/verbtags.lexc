@@ -3,52 +3,86 @@ Multichar_Symbols
 @U.VALENCE.INTRANSITIVE@
 @U.ASPECT.IPFV@
 @U.ASPECT.PFV@
-@U.ASPECT.PROG@
-@U.ASPECT.POT@
+@U.ASPECT.FUT@
+@U.ASPECT.OPT@
+@U.VV.%0@
+@U.VV.H@
+@U.VV.L@
+@U.VV.D@
+@U.TAMA.%0@
+@U.TAMA.aa@
+@U.TAMA.dh@
+@U.TAMA.u@
 @U.SUBJECTPERSON.1@
 @U.SUBJECTPERSON.2@
 @U.SUBJECTPERSON.3@
-@U.SUBJECTPERSON.4@
+@U.SUBJECTPERSON.INDEF@
 @U.SUBJECTNUMBER.SG@
 @U.SUBJECTNUMBER.PL@
-@R.DISTRIBUTIVE.ON@
-@R.DISTRIBUTIVE.OFF@
+
 
 +V
+
++%0
++H
++L
++D
+
 +I
 +T
 
 +Ipfv
 +Pfv
-+Prog
-+Pot
++Fut
++Opt
 
 +Sg1
 +Sg2
 +Sg3
-+Sg4
++SgIndef
 +Pl1
 +Pl2
 +Pl3
-+Pl4
 
-+Distr
 
 LEXICON Root
 @U.VALENCE.INTRANSITIVE@ Intransitive ;
 @U.VALENCE.TRANSITIVE@ Transitive ;
 
 LEXICON Intransitive
-+V+I:0 Aspect ;
++V+I:0 VoiceValence ;
 
 LEXICON Transitive
-+V+T:0 Aspect ;
++V+T:0 VoiceValence ;
+
+
+! TODO: consider leaving these out (to make 'down' easier in foma -- that way,
+! we don't have to know the voice-valence marker in advance to have foma produce
+! inflected forms for a given verb theme)
+LEXICON VoiceValence
+@U.VV.%0@ VV0 ;
+@U.VV.H@ VVH ;
+@U.VV.L@ VVL ;
+@U.VV.D@ VVD ;
+
+LEXICON VV0
++%0:0 Aspect ;
+
+LEXICON VVH
++H:0 Aspect ;
+
+LEXICON VVL
++L:0 Aspect ;
+
+LEXICON VVD
++D:0 Aspect ;
+
 
 LEXICON Aspect
 @U.ASPECT.IPFV@ IPFV ;
 @U.ASPECT.PFV@ PFV ;
-@U.ASPECT.PROG@ PROG;
-@U.ASPECT.POT@ POT ;
+@U.ASPECT.FUT@ FUT ;
+@U.ASPECT.OPT@ OPT ;
 
 LEXICON IPFV
 +Ipfv:0 PersonNumber ;
@@ -56,17 +90,17 @@ LEXICON IPFV
 LEXICON PFV
 +Pfv:0 PersonNumber ;
 
-LEXICON PROG
-+Prog:0 PersonNumber ;
+LEXICON FUT
++Fut:0 PersonNumber ;
 
-LEXICON POT
-+Pot:0 PersonNumber ;
+LEXICON OPT
++Opt:0 PersonNumber ;
 
 Lexicon PersonNumber
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.SG@ SG1 ;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.SG@ SG2 ;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.SG@ SG3 ;
-@U.SUBJECTPERSON.4@@U.SUBJECTNUMBER.SG@ SG4 ;
+@U.SUBJECTPERSON.INDEF@@U.SUBJECTNUMBER.SG@ SGINDEF ;
 @U.SUBJECTPERSON.1@@U.SUBJECTNUMBER.PL@ PL1 ;
 @U.SUBJECTPERSON.2@@U.SUBJECTNUMBER.PL@ PL2 ;
 @U.SUBJECTPERSON.3@@U.SUBJECTNUMBER.PL@ PL3 ;
@@ -80,19 +114,15 @@ Lexicon SG2
 Lexicon SG3
 +Sg3:0 # ;
 
-Lexicon SG4
-+Sg4:0 # ;
+Lexicon SGINDEF
++SgIndef:0 # ;
 
 Lexicon PL1
-+Pl1:0 Distributive ;
++Pl1:0 # ;
 
 Lexicon PL2
-+Pl2:0 Distributive ;
++Pl2:0 # ;
 
 Lexicon PL3
-+Pl3:0 Distributive ;
-
-Lexicon Distributive
-@R.DISTRIBUTIVE.OFF@ # ;
-@R.DISTRIBUTIVE.ON@+Distr:@R.DISTRIBUTIVE.ON@0 # ;
++Pl3:0 # ;
 
