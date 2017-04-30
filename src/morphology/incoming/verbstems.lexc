@@ -67,6 +67,7 @@ delxoh[play]:dE.xoh						INTR-aa-FUT-L;
 delxoh[play]:dE.xoh						INTR-u-OPT-L;
 
 nįįmbeeyh[swimSurface]:mbeeyh			INTR-n-IPFV-0;
+nįįmbeeyh[swimSurface]:mbeeł			INTR-aa-IPFV-0;
 nįįmbeeyh[swimSurface]:mįį				INTR-n-PFV-0;
 nįįmbeeyh[swimSurface]:mbeeł			INTR-aa-FUT-0;
 nįįmbeeyh[swimSurface]:mbeey			INTR-u-OPT-0;
@@ -85,6 +86,19 @@ LEXICON INTR-0-IPFV-H
 
 LEXICON INTR-0-IPFV-L
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-aa-IPFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.aa@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-aa-IPFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.aa@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-aa-IPFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.aa@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-aa-IPFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.aa@@U.VV.L@ Verbsuffixes;
 
 
 LEXICON INTR-n-IPFV-0
