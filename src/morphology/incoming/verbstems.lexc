@@ -1,104 +1,176 @@
 Multichar_Symbols
 @U.VALENCE.INTRANSITIVE@
-@U.VALENCE.TRANSITIVE@
 @U.ASPECT.IPFV@
 @U.ASPECT.PFV@
-@U.ASPECT.PROG@
-@U.ASPECT.POT@
+@U.ASPECT.FUT@
+@U.ASPECT.OPT@
 @U.TAMA.%0@
-@U.TAMA.%0i@
-@U.TAMA.sii@
-@U.TAMA.ni@
-@U.TAMA.yi-y@
-@U.TAMA.yi-a@
-@U.TAMA.yi@
-@U.TAMA.yii@
+@U.TAMA.aa@
+@U.TAMA.n@
+@U.TAMA.dh@
+@U.TAMA.u@
+@U.VV.%0@
+@U.VV.H@
+@U.VV.L@
+@U.VV.D@
+
 
 LEXICON Root
 
-Verbstems;
+VerbThemes;
 
-LEXICON Verbstems
+LEXICON VerbThemes
 
-! N.B. removed English glosses in brackets so that
-! analysis and generation in Gunáhà' would work
+etsüh[cry]:tsüh                         INTR-0-IPFV-0;
+etsüh[cry]:tsia'                        INTR-aa-PFV-0;
+etsüh[cry]:tsüh                     	INTR-aa-FUT-0;
+etsüh[cry]:tsüü                         INTR-u-OPT-0;
 
-itsiy[cry]:tsiy                          INTR-0-IPFV;    ! (IPFV; 0-IPFV)
-itsiy[cry]:tsày                          INTR-yi-y-PFV;  ! (PFV; yi-PFV-yi)
-itsiy[cry]:tsíł                          INTR-yi-PROG;   ! (PROG; yi-PROG)
-itsiy[cry]:ná=chish                      INTR-0-IPFV;    ! (REP; 0-IPFV)
+etsanh[defecate]:tsanh					INTR-0-IPFV-0;
+etsanh[defecate]:tsąą					INTR-dh-PFV-0;
+etsanh[defecate]:tsanh					INTR-aa-FUT-0;
+etsanh[defecate]:tsan					INTR-u-OPT-0;
 
-ts'ázid[wake-up]:ts'á=zíd                INTR-ni-IPFV;   ! (IPFV; ni-IPFV)
-ts'ázid[wake-up]:ts'á=zid                INTR-ni-PFV;    ! (PFV; ni-PFV)
-ts'ázid[wake-up]:ts'á=ził                INTR-yi-PROG;   ! (PROG; yi-PROG) CHECK
-ts'ázid[wake-up]:ts'áná=zhiizh           INTR-ni-IPFV;   ! (REP; ni-IPFV)
+ełüh[urinate]:łüh						INTR-0-IPFV-0;
+ełüh[urinate]:łia'						INTR-dh-PFV-0;
+ełüh[urinate]:łüh						INTR-aa-FUT-0;
+ełüh[urinate]:łüü						INTR-u-OPT-0;
 
-! ! CHECK
-nàgudiitłod[jump-down]:nà=gu_di.tłod     INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłòt     INTR-sii-PFV;   ! (PFV; sii-PFV)
-nàgudiitłod[jump-down]:nà=gu_di.tłíł     INTR-yii-PROG;  ! (PROG; yii-PROG)
-nàgudiitłod[jump-down]:nàná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-nàgudiitłod[jump-down]:nìná=gu_di.tłiizh INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-! nàná == nìná == nìí
+ne'iah[stringO]:nE.'iah					INTR-0-IPFV-0;
+ne'iah[stringO]:nE.'iah					INTR-dh-PFV-0;
+ne'iah[stringO]:nE.'iah					INTR-aa-FUT-0;
+ne'iah[stringO]:nE.'iah					INTR-u-OPT-0;
 
-! ! CHECK
-tsídiitł'á[run-away]:tsí=di.tł'á         INTR-0i-IPFV;   ! (IPFV; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tł'ò         INTR-sii-PFV;   ! (PFV; sii-PFV)
-tsídiitł'á[run-away]:tsí=di.tł'áł        INTR-yii-PROG;  ! (PROG; yii-PROG)
-tsídiitł'á[run-away]:nátsí=di.tł'ásh     INTR-0i-IPFV;   ! (REP; 0i-IPFV)
-tsídiitł'á[run-away]:tsí=di.tl'ò         INTR-yii-POT;   ! (POT; yii-POT)
+neh'įh[seeO]:nE.'įh						INTR-0-IPFV-H;
+neh'įh[seeO]:nE.'įį'					INTR-aa-PFV-H;
+neh'įh[seeO]:nE.'įįł					INTR-aa-FUT-H;
+neh'įh[seeO]:nE.'įį						INTR-u-OPT-H;
 
-!
-! Non-past/imperfective (IPFV) forms
-!
-LEXICON INTR-0-IPFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@ Verbsuffixes;
+etnaa[work]:naa							INTR-0-IPFV-D;
+etnaa[work]:na'							INTR-aa-PFV-D;
+!etnaa[work]:naa						INTR-aa-FUT-D;
+etnaa[work]:naa'						INTR-u-OPT-D;
 
-LEXICON INTR-0i-IPFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0i@ Verbsuffixes;
+eldeeł[eatpO]:deeł						INTR-0-IPFV-L;
+eldeeł[eatpO]:deeł						INTR-aa-PFV-L;
+eldeeł[eatpO]:deeł						INTR-aa-FUT-L;
+eldeeł[eatpO]:deeł						INTR-u-OPT-L;
 
-LEXICON INTR-ni-IPFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.ni@ Verbsuffixes;
+na'etkuyh[vomit]:na=kuyh				INTR-0-IPFV-D;
+na'etkuyh[vomit]:na=kuyh				INTR-dh-PFV-D;
+na'etkuyh[vomit]:na=kuyh				INTR-aa-FUT-D;
+na'etkuyh[vomit]:na=kuyh				INTR-u-OPT-D;
 
-!
-! Past/perfective (PFV) forms
-!
-LEXICON INTR-ni-PFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.ni@ Verbsuffixes;
+delxoh[play]:dE.xoh						INTR-0-IPFV-L;
+delxoh[play]:dE.xoh						INTR-aa-PFV-L;
+delxoh[play]:dE.xoh						INTR-aa-FUT-L;
+delxoh[play]:dE.xoh						INTR-u-OPT-L;
 
-LEXICON INTR-sii-PFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.sii@ Verbsuffixes;
-
-LEXICON INTR-yi-y-PFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-y@ Verbsuffixes;
-
-LEXICON INTR-yi-a-PFV
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.yi-a@ Verbsuffixes;
+nįįmbeeyh[swimSurface]:mbeeyh			INTR-n-IPFV-0;
+nįįmbeeyh[swimSurface]:mįį				INTR-n-PFV-0;
+nįįmbeeyh[swimSurface]:mbeeł			INTR-aa-FUT-0;
+nįįmbeeyh[swimSurface]:mbeey			INTR-u-OPT-0;
 
 !
-! Progressive (PROG) forms
+! Intransitive verb forms.
 !
-LEXICON INTR-yi-PROG
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yi@ Verbsuffixes;
+LEXICON INTR-0-IPFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.%0@ Verbsuffixes;
 
-LEXICON INTR-yii-PROG
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.PROG@@U.TAMA.yii@ Verbsuffixes;
+LEXICON INTR-0-IPFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-0-IPFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-0-IPFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-n-IPFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.n@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-n-IPFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.n@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-n-IPFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.n@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-n-IPFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.n@@U.VV.L@ Verbsuffixes;
+
+
+
+LEXICON INTR-aa-PFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.aa@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-aa-PFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.aa@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-aa-PFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.aa@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-aa-PFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.aa@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-n-PFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.n@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-n-PFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.n@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-n-PFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.n@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-n-PFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.n@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-dh-PFV-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.dh@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-dh-PFV-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.dh@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-dh-PFV-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.dh@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-dh-PFV-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.PFV@@U.TAMA.dh@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-aa-FUT-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.FUT@@U.TAMA.aa@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-aa-FUT-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.FUT@@U.TAMA.aa@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-aa-FUT-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.FUT@@U.TAMA.aa@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-aa-FUT-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.FUT@@U.TAMA.aa@@U.VV.L@ Verbsuffixes;
+
+
+LEXICON INTR-u-OPT-0
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.OPT@@U.TAMA.u@@U.VV.%0@ Verbsuffixes;
+
+LEXICON INTR-u-OPT-D
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.OPT@@U.TAMA.u@@U.VV.D@ Verbsuffixes;
+
+LEXICON INTR-u-OPT-H
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.OPT@@U.TAMA.u@@U.VV.H@ Verbsuffixes;
+
+LEXICON INTR-u-OPT-L
+@U.VALENCE.INTRANSITIVE@@U.ASPECT.OPT@@U.TAMA.u@@U.VV.L@ Verbsuffixes;
+
+
 
 !
-! Potential (POT) forms
-!
-LEXICON INTR-yii-POT
-@U.VALENCE.INTRANSITIVE@@U.ASPECT.POT@@U.TAMA.yii@ Verbsuffixes;
-
-
-!
-! Suffixes and enclitics.
+! Suffixes and enclitics. (TODO)
 !
 LEXICON Verbsuffixes
 
 !-gù[manner]:-gù   #;
                   #;
-
-! OUTER.PFX#    --> OUTER.PFX=
-! OUTER.SBJ/DO% --> OUTER.SBJ_
-! INNER.PFX-    --> INNER.PFX.
