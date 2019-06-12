@@ -7,5 +7,5 @@ srcdir=${datadir}/giella/${gtlang}
 
 Name: giella-tau
 Description: Finite-state language processing tools for Upper Tanana
-URL: http://divvun.no/doc/index.html
+URL: https://giellalt.uit.no/index.html
 Version: @VERSION@
