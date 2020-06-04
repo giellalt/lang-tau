@@ -1,0 +1,9 @@
+name = "Upper Tanana"
+version = "0.1.0"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.tau"
+
+[windows]
+system_product_code = "C3361F3B-4D16-4B28-8661-C77F335066D9"
+msoffice_product_code = "0B2EDA2C-A572-48D7-9DD0-54DE9F17670C"
