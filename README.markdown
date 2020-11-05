@@ -21,7 +21,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/taudoc/index.html>
+-   <https://giellalt.uit.no/lang/tau/UpperTananaDocumentation.html>
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
