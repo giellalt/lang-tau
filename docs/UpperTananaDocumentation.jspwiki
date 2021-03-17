@@ -1,15 +1,9 @@
 [What is this?|WhatIsThis.html]
 
 
-!!! Dynamic documentation
 
-* [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/startup-langs/tau/src/fst/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/startup-langs/tau/src/fst/affixes/] 
-  / [syntax|https://gtsvn.uit.no/langtech/trunk/startup-langs/tau/src/syntax] 
-  / [twolc|https://gtsvn.uit.no/langtech/trunk/startup-langs/tau/src/phonology/tau-phon.twolc]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/startup-langs/tau/test/src/fst/]
 
+ 
 !!! Project pages
 
 * [Alberta Language Technology Lab|http://altlab.artsrn.ualberta.ca/]
