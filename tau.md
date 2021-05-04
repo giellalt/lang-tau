@@ -1,3 +1,54 @@
+Noun inflection
+The Upper Tanana language nouns inflect in cases.
+
+
+
+Proper noun inflection
+The Upper Tanana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+Adjective inflection
+The Upper Tanana language adjectives compare.
+
+
+
+Verb inflection
+The Upper Tanana language verbs inflect in persons.
+
+
+
+=================================== !
+The Upper Tanana morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Upper Tanana LANGUAGE.
 
@@ -76,6 +127,85 @@ given the proper use of these flags.
 
 The word forms in Upper Tanana language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
+
+Nouns
+Nouns in the Upper Tanana language are things.
+
+
+Prefixes
+Prefixes in the Upper Tanana language are bound to beginning of other words.
+
+
+
+Pronouns
+Pronouns in the Upper Tanana language are references to things.
+
+
+Adjectives
+Adjectives in the Upper Tanana language describe things.
+
+
+Verbs
+Verbs in the Upper Tanana language are actions.
+
+
+Numerals
+Numerals in the Upper Tanana language are numbers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
 
 
 
