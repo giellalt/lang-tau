@@ -1,29 +1,26 @@
-Noun inflection
-The Upper Tanana language nouns inflect in cases.
+Nouns
+Nouns in the Upper Tanana language are things.
+
+
+Numerals
+Numerals in the Upper Tanana language are numbers.
+
+
+Verbs
+Verbs in the Upper Tanana language are actions.
+
+
+Prefixes
+Prefixes in the Upper Tanana language are bound to beginning of other words.
 
 
 
-Proper noun inflection
-The Upper Tanana language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+Adjectives
+Adjectives in the Upper Tanana language describe things.
 
 
-
-
-# Symbol affixes
-
-
-
-
-
-Adjective inflection
-The Upper Tanana language adjectives compare.
-
-
-
-Verb inflection
-The Upper Tanana language verbs inflect in persons.
-
+Pronouns
+Pronouns in the Upper Tanana language are references to things.
 
 
 =================================== !
@@ -49,6 +46,34 @@ The Upper Tanana morphophonological/twolc rules file !
 * examples:*
 
 * examples:*
+
+# Symbol affixes
+
+
+
+
+
+Noun inflection
+The Upper Tanana language nouns inflect in cases.
+
+
+
+Proper noun inflection
+The Upper Tanana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Verb inflection
+The Upper Tanana language verbs inflect in persons.
+
+
+
+Adjective inflection
+The Upper Tanana language adjectives compare.
+
+
+
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Upper Tanana LANGUAGE.
 
@@ -128,29 +153,20 @@ given the proper use of these flags.
 The word forms in Upper Tanana language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-Nouns
-Nouns in the Upper Tanana language are things.
-
-
-Prefixes
-Prefixes in the Upper Tanana language are bound to beginning of other words.
 
 
 
-Pronouns
-Pronouns in the Upper Tanana language are references to things.
+We describe here how abbreviations are in Upper Tanana are read out, e.g.
+for text-to-speech systems.
 
+For example:
 
-Adjectives
-Adjectives in the Upper Tanana language describe things.
-
-
-Verbs
-Verbs in the Upper Tanana language are actions.
-
-
-Numerals
-Numerals in the Upper Tanana language are numbers.
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -206,20 +222,4 @@ Numerals in the Upper Tanana language are numbers.
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Upper Tanana are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
