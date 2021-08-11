@@ -3,7 +3,7 @@ The Upper Tanana morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
 [![Build Status](https://github.com/giellalt/lang-tau/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tau/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://raw.githubusercontent.com/giellalt/lang-tau/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
 
 This repository contains finite state source files for the Upper Tanana language,
 for building morphological analysers, proofing tools
