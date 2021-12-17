@@ -630,71 +630,38 @@ The Upper Tanana morphophonological/twolc rules file !
 
 * examples:*
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/phonology.twolc)</small>Verb inflection
-The Upper Tanana language verbs inflect in persons.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
-The Upper Tanana language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/phonology.twolc)</small>Nouns
+Nouns in the Upper Tanana language are things.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/propernouns.lexc)</small>Noun inflection
-The Upper Tanana language nouns inflect in cases.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/nouns.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/symbols.lexc)</small>Adjective inflection
-The Upper Tanana language adjectives compare.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/adjectives.lexc)</small>Pronouns
-Pronouns in the Upper Tanana language are references to things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/pronouns.lexc)</small>Numerals
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/nouns.lexc)</small>Numerals
 Numerals in the Upper Tanana language are numbers.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/numerals.lexc)</small>Verbs
-Verbs in the Upper Tanana language are actions.
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/numerals.lexc)</small>Adjectives
+Adjectives in the Upper Tanana language describe things.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/verbs.lexc)</small>Prefixes
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/adjectives.lexc)</small>Prefixes
 Prefixes in the Upper Tanana language are bound to beginning of other words.
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
-Nouns in the Upper Tanana language are things.
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/prefixes.lexc)</small>Pronouns
+Pronouns in the Upper Tanana language are references to things.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
-Adjectives in the Upper Tanana language describe things.
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/pronouns.lexc)</small>Verbs
+Verbs in the Upper Tanana language are actions.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/stems/verbs.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Upper Tanana LANGUAGE.
 
 
@@ -775,6 +742,39 @@ word classes, or optionally from prefixes:
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/root.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/symbols.lexc)</small>Noun inflection
+The Upper Tanana language nouns inflect in cases.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
+The Upper Tanana language adjectives compare.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+The Upper Tanana language verbs inflect in persons.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/verbs.lexc)</small>Proper noun inflection
+The Upper Tanana language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-tau/blob/main/../src/fst/affixes/propernouns.lexc)</small>
 
 
 We describe here how abbreviations are in Upper Tanana are read out, e.g.
