@@ -1,7 +1,7 @@
 # Upper Tanana documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://raw.githubusercontent.com/giellalt/lang-tau/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
 [![Build status](https://github.com/giellalt/lang-tau/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tau/actions)
 
