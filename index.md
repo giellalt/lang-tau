@@ -3,7 +3,7 @@
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 [![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
-[![Build status](https://github.com/giellalt/lang-tau/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-tau/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-tau/main/badge.svg)](https://github.com/giellalt/lang-tau/actions)
 
 This page documents the work on the **Upper Tanana language model**. 
 
