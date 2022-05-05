@@ -13,6 +13,8 @@ Multichar_Symbols
 @U.VV.H@
 @U.VV.L@
 @U.VV.D@
+@R.SUBJECTNUMBER.SG@
+@R.SUBJECTNUMBER.PL@
 
 
 LEXICON Root
@@ -21,60 +23,143 @@ VerbThemes;
 
 LEXICON VerbThemes
 
-etsüh[cry]:tsüh                         INTR-0-IPFV-0;
-etsüh[cry]:tsia'                        INTR-aa-PFV-0;
-etsüh[cry]:tsüh                     	INTR-aa-FUT-0;
-etsüh[cry]:tsüü                         INTR-u-OPT-0;
+! etsüh[cry]:tsüh                         		INTR-0-IPFV-0;
+! etsüh[cry]:tsia'                        		INTR-aa-PFV-0;
+! etsüh[cry]:tsüh                     			INTR-aa-FUT-0;
+! etsüh[cry]:tsüü                         		INTR-u-OPT-0;
 
-etsanh[defecate]:tsanh					INTR-0-IPFV-0;
-etsanh[defecate]:tsąą					INTR-dh-PFV-0;
-etsanh[defecate]:tsanh					INTR-aa-FUT-0;
-etsanh[defecate]:tsan					INTR-u-OPT-0;
+! etsanh[defecate]:tsanh					INTR-0-IPFV-0;
+! etsanh[defecate]:tsąą					INTR-dh-PFV-0;
+! etsanh[defecate]:tsanh					INTR-aa-FUT-0;
+! etsanh[defecate]:tsan					INTR-u-OPT-0;
 
-ełüh[urinate]:łüh						INTR-0-IPFV-0;
-ełüh[urinate]:łia'						INTR-dh-PFV-0;
-ełüh[urinate]:łüh						INTR-aa-FUT-0;
-ełüh[urinate]:łüü						INTR-u-OPT-0;
+! ełüh[urinate]:łüh					INTR-0-IPFV-0;
+! ełüh[urinate]:łia'					INTR-dh-PFV-0;
+! ełüh[urinate]:łüh					INTR-aa-FUT-0;
+! ełüh[urinate]:łüü					INTR-u-OPT-0;
 
-ne'iah[stringO]:nE.'iah					INTR-0-IPFV-0;
-ne'iah[stringO]:nE.'iah					INTR-dh-PFV-0;
-ne'iah[stringO]:nE.'iah					INTR-aa-FUT-0;
-ne'iah[stringO]:nE.'iah					INTR-u-OPT-0;
+! ne'iah[stringO]:nE.'iah					INTR-0-IPFV-0;
+! ne'iah[stringO]:nE.'iah					INTR-dh-PFV-0;
+! ne'iah[stringO]:nE.'iah					INTR-aa-FUT-0;
+! ne'iah[stringO]:nE.'iah					INTR-u-OPT-0;
 
-neh'įh[seeO]:nE.'įh						INTR-0-IPFV-H;
-neh'įh[seeO]:nE.'įį'					INTR-aa-PFV-H;
-neh'įh[seeO]:nE.'įįł					INTR-aa-FUT-H;
-neh'įh[seeO]:nE.'įį						INTR-u-OPT-H;
+! neh'įh[seeO]:nE.'įh					INTR-0-IPFV-H;
+! neh'įh[seeO]:nE.'įį'					INTR-aa-PFV-H;
+! neh'įh[seeO]:nE.'įįł					INTR-aa-FUT-H;
+! neh'įh[seeO]:nE.'įį					INTR-u-OPT-H;
 
-etnaa[work]:naa							INTR-0-IPFV-D;
-etnaa[work]:na'							INTR-aa-PFV-D;
-!etnaa[work]:naa						INTR-aa-FUT-D;
-etnaa[work]:naa'						INTR-u-OPT-D;
+! etnaa[work]:naa						INTR-0-IPFV-D;
+! etnaa[work]:na'						INTR-aa-PFV-D;
+! !etnaa[work]:naa					INTR-aa-FUT-D;
+! etnaa[work]:naa'					INTR-u-OPT-D;
 
-eldeeł[eatpO]:deeł						INTR-0-IPFV-L;
-eldeeł[eatpO]:deeł						INTR-aa-PFV-L;
-eldeeł[eatpO]:deeł						INTR-aa-FUT-L;
-eldeeł[eatpO]:deeł						INTR-u-OPT-L;
+! eldeeł[eatpO]:deeł					INTR-0-IPFV-L;
+! eldeeł[eatpO]:deeł					INTR-aa-PFV-L;
+! eldeeł[eatpO]:deeł					INTR-aa-FUT-L;
+! eldeeł[eatpO]:deeł					INTR-u-OPT-L;
 
-na'etkuyh[vomit]:na=kuyh				INTR-0-IPFV-D;
-na'etkuyh[vomit]:na=kuyh				INTR-dh-PFV-D;
-na'etkuyh[vomit]:na=kuyh				INTR-aa-FUT-D;
-na'etkuyh[vomit]:na=kuyh				INTR-u-OPT-D;
+! na'etkuyh[vomit]:na=kuyh				INTR-0-IPFV-D;
+! na'etkuyh[vomit]:na=kuyh				INTR-dh-PFV-D;
+! na'etkuyh[vomit]:na=kuyh				INTR-aa-FUT-D;
+! na'etkuyh[vomit]:na=kuyh				INTR-u-OPT-D;
 
-delxoh[play]:dE.xoh						INTR-0-IPFV-L;
-delxoh[play]:dE.xoh						INTR-aa-PFV-L;
-delxoh[play]:dE.xoh						INTR-aa-FUT-L;
-delxoh[play]:dE.xoh						INTR-u-OPT-L;
+! delxoh[play]:dE.xoh					INTR-0-IPFV-L;
+! delxoh[play]:dE.xoh					INTR-aa-PFV-L;
+! delxoh[play]:dE.xoh					INTR-aa-FUT-L;
+! delxoh[play]:dE.xoh					INTR-u-OPT-L;
 
-nįįmbeeyh[swimSurface]:mbeeyh			INTR-n-IPFV-0;
-nįįmbeeyh[swimSurface]:mbeeł			INTR-aa-IPFV-0;
-nįįmbeeyh[swimSurface]:mįį				INTR-n-PFV-0;
-nįįmbeeyh[swimSurface]:mbeeł			INTR-aa-FUT-0;
-nįįmbeeyh[swimSurface]:mbeey			INTR-u-OPT-0;
+! nįįmbeeyh[swimSurface]:mbeeyh				INTR-n-IPFV-0;
+! nįįmbeeyh[swimSurface]:mbeeł				INTR-aa-IPFV-0;
+! nįįmbeeyh[swimSurface]:mįį				INTR-n-PFV-0;
+! nįįmbeeyh[swimSurface]:mbeeł				INTR-aa-FUT-0;
+! nįįmbeeyh[swimSurface]:mbeey				INTR-u-OPT-0;
+
+! naholnek[tell.story]:na=hoE.nek				INTR-0-IPFV-L;
+! naholnek[tell.story]:na=hoE.nek				INTR-aa-PFV-L;
+! naholnek[tell.story]:na=hoE.nek				INTR-aa-FUT-L;
+! naholnek[tell.story]:na=hoE.nek				INTR-u-OPT-L;
+
+! eedlah[classify.PL.O]:dlah                  INTR-0-PFV-0;  !check with Olga why the forms for the IPFV and PFV are similar 
+
+! eetąą[classify.LRO]:tąą                     INTR-0-IPFV-0;
+
+! ee'ąą[classify.CO]:ąą                       INTR-dh-PFV-O;
+! ee'ąą[classify.CO]:ą'                       INTR-aa-PFV-O;
+
+
+! nįįnah[move.nomadically]:naholnek           INTR-n-IPFV-0;    !Imperative
+! nįįnąą[move.nomadically]:nąą                INTR-n-PFV-0;
+
+! atkeeł[go.by.boat]:keeł                     INTR-aa-IPFV-D;   !Progressive
+
 
 !
 ! Intransitive verb forms.
 !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!Singular only!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!SG.go
+aahaał[SG.go]:haał                         		INTR-n-IPFV-0-SG;
+aahaał[SG.go]:shyah                        		INTR-n-PFV-0-SG;
+aahaał[SG.go]:shyah                        		INTR-aa-PFV-0-SG;
+aahaał[SG.go]:haał                     	   		INTR-aa-FUT-0-SG;
+aahaał[SG.go]:shya'                        		INTR-u-OPT-0-SG;
+
+! na'inshyah[SG.arrive.back]:na=shyah			    INTR-n-PFV-D-SG;
+
+! ninįįhaał[SG.go.to.a.point]:ni=haał             INTR-n-IPFV-0-SG;  !Imperative
+! ninįįshyah[SG.go.to.a.point]:ni=shyah           INTR-n-PFV-0-SG;
+ 
+! łoonįįshyah[SG.go.all.over]:łoo=shyah			  INTR-n-PFV-0-SG;
+
+! tinįįshyah[SG.start.to.move]:t=haał			  INTR-n-IPFV-0-SG;  !a rule for i insertion required
+
+! danįįshyah[SG.go.inside]:da=shyah			    INTR-n-PFV-0-SG;
+
+! tthinįįshyah[SG.go.outside]:tthi=shyah			INTR-n-PFV-0-SG;
+
+! ki'įįhshyah[SG.go.up]:ki=shyah				  INTR-aa-PFV-0-SG;
+
+! skinįįshyah[SG.go.across]:ski=shyah			  INTR-n-PFV-0-SG;
+
+! kitl'a'įįshyah[SG.go.ashore]:kitl'a=shyah		INTR-aa-PFV-0-SG;
+
+! snake'aahaał[SG.go.around.in.a.circle]:snake=haał	INTR-aa-IPV-0-SG;
+
+! stanįįshyah[SG.go.away]:sta=shyah			    INTR-n-PFV-0-SG;
+
+
+! !SG fly
+
+! haniit'ak[SG.fly.up.out]:ha=nE.t'ak             INTR-aa-PFV-0-SG;
+
+! daneet'ak[SG.fly.up]:da=nE.t'ak                 INTR-dh-PFV-0-SG;
+
+! tth'ineet'ak[SG.fly.straight]:tth'i=nE.t'ak     INTR-dh-PFV-0-SG;
+
+! !SG run
+
+! altthał[SG.run]:tthał                           INTR-aa-IPV-L-SG; !Progressive
+
+! naįltthat[SG.run.to.a.point]:ni=tthat           INTR-n-PFV-L-SG;
+
+! teltthät[SG.run.off]:t=tthät                    INTR-dh-PFV-L-SG;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!Plural only!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!Pl.go
+haadeeł[PL.go]:deeł                        	    INTR-n-IPFV-0-PL;
+haadeeł[PL.go]:deeł                        		INTR-n-PFV-0-PL;
+haadeeł[PL.go]:däł                        		INTR-aa-PFV-0-PL;
+haadeeł[PL.go]:däł                     	   		INTR-aa-FUT-0-PL;
+haadeeł[PL].go]:deel                        	INTR-u-OPT-0-PL;
+
+
+
 LEXICON INTR-0-IPFV-0
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.IPFV@@U.TAMA.%0@@U.VV.%0@ Verbsuffixes;
 
@@ -179,6 +264,218 @@ LEXICON INTR-u-OPT-H
 LEXICON INTR-u-OPT-L
 @U.VALENCE.INTRANSITIVE@@U.ASPECT.OPT@@U.TAMA.u@@U.VV.L@ Verbsuffixes;
 
+
+!Sg only verbs
+
+LEXICON INTR-0-IPFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-0-IPVF-0;
+
+LEXICON INTR-0-IPFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-0-IPFV-D;
+
+LEXICON INTR-0-IPFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-0-IPFV-H;
+
+LEXICON INTR-0-IPFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-0-IPFV-L;
+
+
+LEXICON INTR-aa-IPFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-IPFV-0;
+
+LEXICON INTR-aa-IPFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-IPFV-D;
+
+LEXICON INTR-aa-IPFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-IPFV-H;
+
+LEXICON INTR-aa-IPFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-IPFV-L;
+
+
+LEXICON INTR-n-IPFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-IPFV-0;
+
+LEXICON INTR-n-IPFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-IPFV-D;
+
+LEXICON INTR-n-IPFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-IPFV-H;
+
+LEXICON INTR-n-IPFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-IPFV-L;
+
+
+
+LEXICON INTR-aa-PFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-PFV-0;
+
+LEXICON INTR-aa-PFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-PFV-D;
+
+LEXICON INTR-aa-PFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-PFV-H;
+
+LEXICON INTR-aa-PFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-PFV-L;
+
+
+LEXICON INTR-n-PFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-PFV-0;
+
+LEXICON INTR-n-PFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-PFV-D;
+
+LEXICON INTR-n-PFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-PFV-H;
+
+LEXICON INTR-n-PFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-n-PFV-L;
+
+
+LEXICON INTR-dh-PFV-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-dh-PFV-0;
+
+LEXICON INTR-dh-PFV-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-dh-PFV-D;
+
+LEXICON INTR-dh-PFV-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-dh-PFV-H;
+
+LEXICON INTR-dh-PFV-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-dh-PFV-L;
+
+
+LEXICON INTR-aa-FUT-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-FUT-0;
+
+LEXICON INTR-aa-FUT-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-FUT-D;
+
+LEXICON INTR-aa-FUT-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-FUT-H;
+
+LEXICON INTR-aa-FUT-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-aa-FUT-L;
+
+
+LEXICON INTR-u-OPT-0-SG
+@R.SUBJECTNUMBER.SG@ INTR-u-OPT-0;
+
+LEXICON INTR-u-OPT-D-SG
+@R.SUBJECTNUMBER.SG@ INTR-u-OPT-D;
+
+LEXICON INTR-u-OPT-H-SG
+@R.SUBJECTNUMBER.SG@ INTR-u-OPT-H;
+
+LEXICON INTR-u-OPT-L-SG
+@R.SUBJECTNUMBER.SG@ INTR-u-OPT-L;
+
+!Pl only verbs
+
+LEXICON INTR-0-IPFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-0-IPFV-0;
+
+LEXICON INTR-0-IPFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-0-IPFV-D;
+
+LEXICON INTR-0-IPFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-0-IPFV-H;
+
+LEXICON INTR-0-IPFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-0-IPFV-L;
+
+
+LEXICON INTR-aa-IPFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-IPFV-0;
+
+LEXICON INTR-aa-IPFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-IPFV-D;
+
+LEXICON INTR-aa-IPFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-IPFV-H;
+
+LEXICON INTR-aa-IPFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-IPFV-L;
+
+
+LEXICON INTR-n-IPFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-IPFV-0;
+
+LEXICON INTR-n-IPFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-IPFV-D;
+
+LEXICON INTR-n-IPFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-IPFV-H;
+
+LEXICON INTR-n-IPFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-IPFV-L;
+
+
+
+LEXICON INTR-aa-PFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-PFV-0;
+
+LEXICON INTR-aa-PFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-PFV-D;
+
+LEXICON INTR-aa-PFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-PFV-H;
+
+LEXICON INTR-aa-PFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-PFV-L;
+
+
+LEXICON INTR-n-PFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-PFV-0;
+
+LEXICON INTR-n-PFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-PFV-D;
+
+LEXICON INTR-n-PFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-PFV-H;
+
+LEXICON INTR-n-PFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-n-PFV-L;
+
+
+LEXICON INTR-dh-PFV-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-dh-PFV-0;
+
+LEXICON INTR-dh-PFV-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-dh-PFV-D;
+
+LEXICON INTR-dh-PFV-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-dh-PFV-H;
+
+LEXICON INTR-dh-PFV-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-dh-PFV-L;
+
+
+LEXICON INTR-aa-FUT-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-FUT-0;
+
+LEXICON INTR-aa-FUT-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-FUT-D;
+
+LEXICON INTR-aa-FUT-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-FUT-H;
+
+LEXICON INTR-aa-FUT-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-aa-FUT-L;
+
+
+LEXICON INTR-u-OPT-0-PL
+@R.SUBJECTNUMBER.PL@ INTR-u-OPT-0;
+
+LEXICON INTR-u-OPT-D-PL
+@R.SUBJECTNUMBER.PL@ INTR-u-OPT-D;
+
+LEXICON INTR-u-OPT-H-PL
+@R.SUBJECTNUMBER.PL@ INTR-u-OPT-H;
+
+LEXICON INTR-u-OPT-L-PL
+@R.SUBJECTNUMBER.PL@ INTR-u-OPT-L;
 
 
 !
