@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - altthäł[run] :
+    altthäł+V+I+aa+Ipfv+L+Sg1:       agntthäł
+    altthäł+V+I+aa+Ipfv+L+Sg2:       įltthäł
+    altthäł+V+I+aa+Ipfv+L+Sg3:       altthäł
+    altthäł+V+I+aa+Ipfv+L+Indef:   ch’eltthäł
+    altthäł+V+I+aa+Ipfv+L+Pl1:       ts’altthäł
+    altthäł+V+I+aa+Ipfv+L+Pl2:       altthäł
+    altthäł+V+I+aa+Ipfv+L+Pl3:       haltthaäł

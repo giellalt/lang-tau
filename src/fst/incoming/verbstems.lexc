@@ -33,10 +33,10 @@ LEXICON VerbThemes
 ! etsanh[defecate]:tsanh					INTR-aa-FUT-0;
 ! etsanh[defecate]:tsan					INTR-u-OPT-0;
 
-! ełüh[urinate]:łüh					INTR-0-IPFV-0;
+! ełüh[urinate]:łüh					    INTR-0-IPFV-0;
 ! ełüh[urinate]:łia'					INTR-dh-PFV-0;
-! ełüh[urinate]:łüh					INTR-aa-FUT-0;
-! ełüh[urinate]:łüü					INTR-u-OPT-0;
+! ełüh[urinate]:łüh					    INTR-aa-FUT-0;
+! ełüh[urinate]:łüü					    INTR-u-OPT-0;
 
 ! ne'iah[stringO]:nE.'iah					INTR-0-IPFV-0;
 ! ne'iah[stringO]:nE.'iah					INTR-dh-PFV-0;
@@ -50,8 +50,8 @@ LEXICON VerbThemes
 
 ! etnaa[work]:naa						INTR-0-IPFV-D;
 ! etnaa[work]:na'						INTR-aa-PFV-D;
-! !etnaa[work]:naa					INTR-aa-FUT-D;
-! etnaa[work]:naa'					INTR-u-OPT-D;
+! etnaa[work]:naa					    INTR-aa-FUT-D;
+! etnaa[work]:naa'					    INTR-u-OPT-D;
 
 ! eldeeł[eatpO]:deeł					INTR-0-IPFV-L;
 ! eldeeł[eatpO]:deeł					INTR-aa-PFV-L;

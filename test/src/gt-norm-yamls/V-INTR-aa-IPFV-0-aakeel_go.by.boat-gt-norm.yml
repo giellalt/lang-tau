@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - aakeeł[go.by.boat] :
+    aakeeł+V+I+aa+Ipfv+0+Sg1:       ihkeel
+    aakeeł+V+I+aa+Ipfv+0+Sg2:       įįkeel
+    aakeeł+V+I+aa+Ipfv+0+Sg3:       aakeel
+    aakeeł+V+I+aa+Ipfv+0+Indef:   ch’ekeel
+    aakeeł+V+I+aa+Ipfv+0+Pl1:       ts’aakeel
+    aakeeł+V+I+aa+Ipfv+0+Pl2:       ahkeel
+    aakeeł+V+I+aa+Ipfv+0+Pl3:       haakeel

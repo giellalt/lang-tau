@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - etsanh[defecate] :
+    etsanh+V+I+dh+Pfv+0+Sg1:       dhihtsąą
+    etsanh+V+I+dh+Pfv+0+Sg2:       dhįįtsąą
+    etsanh+V+I+dh+Pfv+0+Sg3:       eetsąą
+    etsanh+V+I+dh+Pfv+0+Indef:   dzihtsąą
+    etsanh+V+I+dh+Pfv+0+Pl1:       ts’eetsąą
+    etsanh+V+I+dh+Pfv+0+Pl2:       dhahtsąą
+    etsanh+V+I+dh+Pfv+0+Pl3:       heetsąą

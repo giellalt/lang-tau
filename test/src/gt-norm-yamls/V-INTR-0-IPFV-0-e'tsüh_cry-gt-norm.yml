@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - etsüh[cry] :
+    etsüh+V+I+0+Ipfv+Sg1:       ihtsüh
+    etsüh+V+I+0+Ipfv+Sg2:       įįtsüh
+    etsüh+V+I+0+Ipfv+Sg3:       etsüh
+    etsüh+V+I+0+Ipfv+Indef:   ch’etsüh
+    etsüh+V+I+0+Ipfv+Pl1:       ts’etsüh
+    etsüh+V+I+0+Ipfv+Pl2:       ahtsüh
+    etsüh+V+I+0+Ipfv+Pl3:       hetsüh

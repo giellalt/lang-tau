@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - ehmbiah[cook] :
+    ehmbiah+V+I+0+Ipfv+H+Sg1:       akmbiah
+    ehmbiah+V+I+0+Ipfv+H+Sg2:       įhmbiah
+    ehmbiah+V+I+0+Ipfv+H+Sg3:       ehmbiah
+    ehmbiah+V+I+0+Ipfv+H+Indef:   ch’ehmbiah
+    ehmbiah+V+I+0+Ipfv+H+Pl1:       ts’ehmbiah
+    ehmbiah+V+I+0+Ipfv+H+Pl2:       ah’mbiah
+    ehmbiah+V+I+0+Ipfv+H+Pl3:       hehmbiah

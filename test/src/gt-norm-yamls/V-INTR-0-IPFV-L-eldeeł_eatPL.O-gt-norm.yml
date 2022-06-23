@@ -1,0 +1,18 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  Verb - eldeeł[eat.PL.O] :
+    eldeeł+V+I+0+Ipfv+L+Sg1:       agndeeł
+    eldeeł+V+I+0+Ipfv+L+Sg2:       įldeeł
+    eldeeł+V+I+0+Ipfv+L+Sg3:       eldeeł
+    eldeeł+V+I+0+Ipfv+L+Indef:   ch’eldeeł
+    eldeeł+V+I+0+Ipfv+L+Pl1:       ts’eldeeł
+    eldeeł+V+I+0+Ipfv+L+Pl2:       aldeeł
+    eldeeł+V+I+0+Ipfv+L+Pl3:       heldeeł
