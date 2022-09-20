@@ -4,6 +4,8 @@ The Upper Tanana morphology and tools
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
 [![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-tau/main/badge.svg)](https://github.com/giellalt/lang-tau/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
+[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-tau?platform=desktop&channel=nightly)
+[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-tau?platform=mbile&channel=nightly)
 
 This repository contains finite state source files for the Upper Tanana language,
 for building morphological analysers, proofing tools
