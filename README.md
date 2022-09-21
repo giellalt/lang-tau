@@ -30,7 +30,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/tau/UpperTananaDocumentation.html>
+- [Language specific documentation](https://giellalt.github.io/lang-tau/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
