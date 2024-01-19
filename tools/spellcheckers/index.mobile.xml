@@ -2,7 +2,7 @@
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
     <locale>tau</locale>
-    <title>Giellatekno/Divvun/UiT fst-based speller for Upper Tanana</title>
+    <title>Upper Tanana</title>
     <description>This is an fst-based speller for Upper Tanana. It is based
     on the normative subset of the morphological analyser for Upper Tanana.
     The source code can be found at:
