@@ -4,7 +4,7 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-tau%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-tau/main/badge.svg)](https://github.com/giellalt/lang-tau/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-tau?label=CI)](https://builds.giellalt.org/pipelines/lang-tau/builds/latest)
 
 This page documents the work on the **Upper Tanana language model**. 
 
