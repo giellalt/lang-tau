@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-tau)](https://github.com/giellalt/lang-tau/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-tau?label=CI)](https://builds.giellalt.org/pipelines/lang-tau/builds/latest)
-[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/__GLOTTOLOG_ID__)
 
 This page documents the work on the **Upper Tanana language model**. 
 
